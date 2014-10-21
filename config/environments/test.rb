@@ -36,4 +36,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # In Rails 5.0, the default value of this option will change from `:sorted` 
+  # to `:random`. To disable this warning and keep the current behavior, you 
+  # can add the following line to your `config/environments/test.rb`
+  config.active_support.test_order = :sorted
 end
